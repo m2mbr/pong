@@ -14,9 +14,9 @@ const PAD_SPEED = 150
 func _ready():
 	screen_size = get_viewport_rect().size
 	pad_size = get_node("left").get_texture().get_size()
-	print(pad_size)
 	set_process(true)
 	print("ready...")
 	
 func _process(delta):
-	pass
+	var ball_pos = get_node("ball").get_pos()
+	print(ball_pos)
